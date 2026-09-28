@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madrasty - School Clinic</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#087f6d",
+              secondary: "#2ca89a",
+              lightGreen: "#67c3b5",
+              darkGreen: "#087d69",
+              themeGreen: "#168d80",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-sans text-gray-700 bg-white antialiased">
+    <!-- =========================================================
+         HERO SECTION
+    ========================================================== -->
+    <section
+      class="relative h-[500px] md:h-[600px] lg:h-[680px] overflow-hidden"
+    >
+      <!-- Background Image -->
+      <img
+        src="img/download.jpg"
+        alt="Doctor"
+        class="absolute inset-0 w-full h-full object-cover object-top"
+      />
+
+      <!-- Light Overlay -->
+      <div class="absolute inset-0 bg-black/5"></div>
+
+      <!-- ================= NAVBAR ================= -->
+      <nav
+        class="relative z-10 max-w-6xl mx-auto px-6 py-6 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a href="#" class="flex items-center">
+          <img src="img/mad.png" alt="Madrasty Logo" class="w-16 md:w-20" />
+        </a>
+
+        <!-- Navigation Links -->
+        <div
+          class="hidden md:flex items-center gap-10 text-white text-sm font-medium"
+        >
+          <a href="#" class="hover:text-green-200 transition">Home</a>
+          <a href="#" class="hover:text-green-200 transition">About</a>
+          <a href="#" class="hover:text-green-200 transition">Affairs</a>
+          <a href="#" class="hover:text-green-200 transition">Subject</a>
+        </div>
+
+        <!-- Logout Button -->
+        <button
+          class="bg-[#ff5a5f] hover:bg-[#e0484d] text-white text-xs px-5 py-2 rounded-md font-medium transition shadow-sm"
+        >
+          Log out
+        </button>
+      </nav>
+
+      <!-- ================= HERO TEXT ================= -->
+      <div class="relative z-10 max-w-6xl mx-auto px-6">
+        <div
+          class="mt-12 md:mt-20 w-[240px] md:w-[280px] bg-[#57b59f]/85 backdrop-blur-sm rounded-2xl p-6 md:p-8 text-white shadow-lg"
+        >
+          <p class="text-xl md:text-2xl leading-relaxed font-light">
+            Always Laugh<br />
+            when you can,<br />
+            it is free<br />
+            medicine
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SCHOOL CLINIC SECTION
+    ========================================================== -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+          <h2
+            class="inline-block text-primary text-xl md:text-2xl font-semibold relative pb-3"
+          >
+            School clinic
+            <!-- Orange Underline -->
+            <span
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-[3px] bg-orange-400 rounded-full"
+            ></span>
+          </h2>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Clinic Image Collage/Composition -->
+          <div class="flex justify-center">
+            <img
+              src="img/compo.png"
+              alt="School clinic composite"
+              class="w-full max-w-md object-contain"
+            />
+          </div>
+
+          <!-- Clinic Text Content -->
+          <div>
+            <h3 class="text-primary text-lg md:text-xl font-medium mb-4">
+              The school clinic services
+            </h3>
+
+            <p
+              class="text-gray-500 text-xs md:text-sm leading-relaxed max-w-lg mb-4"
+            >
+              Conducting periodic checks for students. Implementing vaccination
+              programs to prevent diseases, according to the instructions of the
+              Ministry of Health. Follow-up of sick cases and contact with
+              parents to attend if the case requires.
+            </p>
+
+            <p
+              class="text-gray-500 text-xs md:text-sm leading-relaxed max-w-lg"
+            >
+              Providing a healthy environment in the school community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SERVICES SECTION
+    ========================================================== -->
+    <section class="relative py-16 md:py-24 overflow-hidden">
+      <!-- Green Background Overlay -->
+      <div class="absolute inset-0 bg-themeGreen"></div>
+
+      <!-- Background Image Pattern -->
+      <img
+        src="img/Path 62.png"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover opacity-15 mix-blend-overlay pointer-events-none"
+      />
+
+      <div class="relative z-10 max-w-6xl mx-auto px-6">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+          <h2 class="text-white text-xl md:text-2xl font-medium">
+            Don't Hesitate to be in Touch
+          </h2>
+        </div>
+
+        <!-- Service Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- CARD 1 -->
+          <div
+            class="bg-white rounded-xl p-3 shadow-lg hover:-translate-y-2 transition duration-300 flex flex-col justify-between"
+          >
+            <div class="overflow-hidden rounded-lg h-36">
+              <img
+                src="img/s1.png"
+                alt="First Aids"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="px-2 pt-4 pb-2 text-center sm:text-left">
+              <h3 class="text-themeGreen text-sm font-semibold mb-2">
+                First Aids
+              </h3>
+              <p class="text-gray-500 text-[11px] leading-5">
+                Providing general safety and first aid supplies. Conducting the
+                necessary first aid and referring emergency cases to hospital
+                when necessary.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            class="bg-white rounded-xl p-3 shadow-lg hover:-translate-y-2 transition duration-300 flex flex-col justify-between"
+          >
+            <div class="overflow-hidden rounded-lg h-36">
+              <img
+                src="img/s2.png"
+                alt="Health education"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="px-2 pt-4 pb-2 text-center sm:text-left">
+              <h3 class="text-themeGreen text-sm font-semibold mb-2">
+                Health education
+              </h3>
+              <p class="text-gray-500 text-[11px] leading-5">
+                Conducting awareness and educational lectures on public health
+                and the importance of eating healthy foods.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            class="bg-white rounded-xl p-3 shadow-lg hover:-translate-y-2 transition duration-300 flex flex-col justify-between"
+          >
+            <div class="overflow-hidden rounded-lg h-36">
+              <img
+                src="img/s3.png"
+                alt="Dental Health and Safety"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="px-2 pt-4 pb-2 text-center sm:text-left">
+              <h3 class="text-themeGreen text-sm font-semibold mb-2">
+                Dental Health and Safety
+              </h3>
+              <p class="text-gray-500 text-[11px] leading-5">
+                Do a regular dental checkup. Spreading awareness and promoting
+                healthy behavior among students of basic grades.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            class="bg-white rounded-xl p-3 shadow-lg hover:-translate-y-2 transition duration-300 flex flex-col justify-between"
+          >
+            <div class="overflow-hidden rounded-lg h-36">
+              <img
+                src="img/s4.png"
+                alt="Student insurance"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="px-2 pt-4 pb-2 text-center sm:text-left">
+              <h3 class="text-themeGreen text-sm font-semibold mb-2">
+                Student insurance
+              </h3>
+              <p class="text-gray-500 text-[11px] leading-5">
+                The doctor or nurse handles simple ambulance cases, while the
+                student is transferred to the hospital if necessary within the
+                coverage program.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         DOCTORS SECTION (Bigger Image Only)
+    ========================================================== -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+          <!-- Doctor Image 1 -->
+          <div class="flex items-center justify-center">
+            <img
+              src="img/Group 182.png"
+              alt="Doctor Avatar"
+              class="w-32 h-32 md:w-40 md:h-40 object-contain"
+            />
+          </div>
+
+          <!-- Doctor Image 2 -->
+          <div class="flex items-center justify-center">
+            <img
+              src="img/Group 182.png"
+              alt="Doctor Avatar"
+              class="w-32 h-32 md:w-40 md:h-40 object-contain"
+            />
+          </div>
+
+          <!-- Doctor Image 3 -->
+          <div class="flex items-center justify-center">
+            <img
+              src="img/Group 182.png"
+              alt="Doctor Avatar"
+              class="w-32 h-32 md:w-40 md:h-40 object-contain"
+            />
+          </div>
+
+          <!-- Doctor Image 4 -->
+          <div class="flex items-center justify-center">
+            <img
+              src="img/Group 182.png"
+              alt="Doctor Avatar"
+              class="w-32 h-32 md:w-40 md:h-40 object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FOOTER (6-Column Grid)
+    ========================================================== -->
+    <footer
+      class="bg-[#07836f] text-white rounded-t-[60px] md:rounded-t-[80px]"
+    >
+      <div class="max-w-6xl mx-auto px-8 pt-14 pb-8">
+        <!-- 6 Columns Grid on Desktop -->
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-8">
+          <!-- Column 1-3: Madrasty (Takes 3 Columns) -->
+          <div class="md:col-span-3">
+            <h2 class="text-xl font-bold mb-4">Madrasty</h2>
+            <p class="text-[11px] leading-5 text-green-100/90 max-w-xs">
+              The Best collection of international schools For All Student In
+              All different Ages From six years to 15 years
+            </p>
+          </div>
+
+          <!-- Column 4: Student (Takes 1 Column) -->
+          <div class="md:col-span-1">
+            <h3 class="font-medium text-xs mb-3 text-green-100">Student</h3>
+            <ul class="space-y-2 text-[11px] text-green-200/80">
+              <li>
+                <a href="#" class="hover:text-white transition">Result</a>
+              </li>
+              <li><a href="#" class="hover:text-white transition">Exams</a></li>
+              <li>
+                <a href="#" class="hover:text-white transition">Quizzes</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Courses</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 5: News (Takes 1 Column) -->
+          <div class="md:col-span-1">
+            <h3 class="font-medium text-xs mb-3 text-green-100">News</h3>
+            <ul class="space-y-2 text-[11px] text-green-200/80">
+              <li>
+                <a href="#" class="hover:text-white transition">Uniform</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">champion</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Tables</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 6: Contact (Takes 1 Column) -->
+          <div class="md:col-span-1">
+            <h3 class="font-medium text-xs mb-3 text-green-100">Contact</h3>
+            <ul class="space-y-2 text-[11px] text-green-200/80">
+              <li>2033500394</li>
+              <li>Os32@Yahoo.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div
+          class="mt-12 pt-6 border-t border-green-400/20 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-green-200/80"
+        >
+          <p>Reserved writes For Cerative ❤ Team</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
